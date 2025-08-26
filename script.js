@@ -25,7 +25,8 @@ const newGamebtn = document.querySelector('.btn');
     boxes.forEach ((box, index) => {
       box.innerText = "";
       boxes[index].style.pointerEvents = "all";
-      //one more thing is missing
+      //initialize box with css properties again
+     box.classlist = `box box${index+1}`;
     });
     newGamebtn.classList.remove("active");
     gameInfo.innerText = `Current Player - ${CurrentPlayer}`;
