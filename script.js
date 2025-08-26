@@ -74,6 +74,15 @@ const newGamebtn = document.querySelector('.btn');
       newGamebtn.classList.add("active");
       return;
    }
+
+  
+   //let's check whether is tie
+   let fillCount = 0;
+   gameGrid.forEach((box) => {
+      if(box!= "")
+         fillCount++;
+   });
+  
  } 
 
  function handleClick(index) {
